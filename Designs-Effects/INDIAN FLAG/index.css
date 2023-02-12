@@ -1,0 +1,236 @@
+body {
+  margin: 0 auto;
+}
+.wrap {
+  display: grid;
+  place-items: center;
+  margin-top: 15%;
+}
+#orange {
+  border: 2px solid orange;
+  background-color: orange;
+}
+#white {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: white;
+}
+#green {
+  border: 2px solid green;
+  background-color: green;
+}
+.rect {
+  width: 25%;
+  padding: 2%;
+}
+.chakra {
+  border: 2px solid blue;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin: 0 auto;
+  -webkit-animation: chakra 5s infinite;
+  animation: chakra 10s linear 2s infinite;
+}
+.chakra:after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: blue;
+}
+.spoke {
+  position: absolute;
+  display: inline-block;
+  background: blue;
+  height: 55px;
+  width: 2px;
+  left: 50%;
+}
+
+.spoke1 {
+  position: absolute;
+  display: inline-block;
+  background: blue;
+  height: 55px;
+  width: 2px;
+  left: 50%;
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.spoke2 {
+  position: absolute;
+  display: inline-block;
+  background: blue;
+  height: 55px;
+  width: 2px;
+  left: 50%;
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.spoke3 {
+  position: absolute;
+  display: inline-block;
+  background: blue;
+  height: 55px;
+  width: 2px;
+  left: 50%;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.spoke4 {
+  position: absolute;
+  display: inline-block;
+  background: blue;
+  height: 55px;
+  width: 2px;
+  left: 50%;
+  -ms-transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.spoke5 {
+  position: absolute;
+  display: inline-block;
+  background: blue;
+  height: 55px;
+  width: 2px;
+  left: 50%;
+  -ms-transform: rotate(75deg);
+  -webkit-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+.spoke6 {
+  position: absolute;
+  display: inline-block;
+  background: blue;
+  height: 55px;
+  width: 2px;
+  left: 50%;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.spoke7 {
+  position: absolute;
+  display: inline-block;
+  background: blue;
+  height: 55px;
+  width: 2px;
+  left: 50%;
+  -ms-transform: rotate(105deg);
+  -webkit-transform: rotate(105deg);
+  transform: rotate(105deg);
+}
+.spoke8 {
+  position: absolute;
+  display: inline-block;
+  background: blue;
+  height: 55px;
+  width: 2px;
+  left: 50%;
+  -ms-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.spoke9 {
+  position: absolute;
+  display: inline-block;
+  background: blue;
+  height: 55px;
+  width: 2px;
+  left: 50%;
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.spoke10 {
+  position: absolute;
+  display: inline-block;
+  background: blue;
+  height: 55px;
+  width: 2px;
+  left: 50%;
+  -ms-transform: rotate(150deg);
+  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+.spoke11 {
+  position: absolute;
+  display: inline-block;
+  background: blue;
+  height: 55px;
+  width: 2px;
+  left: 50%;
+  -ms-transform: rotate(165deg);
+  -webkit-transform: rotate(165deg);
+  transform: rotate(165deg);
+}
+@-webkit-keyframes chakra {
+  from {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.wave {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    128deg,
+    rgba(89, 72, 21, 0) 39%,
+    rgba(250, 245, 245, 0.8474025974025974) 46%,
+    rgba(89, 72, 21, 0) 53%
+  );
+  animation-name: wavy;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes wavy {
+  0% {
+    background-position: -400px 0px, -400px 0px, -400px 0px, -400px 0px;
+  }
+  100% {
+    background-position: 800px 0px, 800px 0px, 800px 0px, 800px 0px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .wrap {
+    margin-top: 30%;
+  }
+  .rect {
+    width: 45%;
+    padding: 5%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .wrap {
+    margin-top: 25%;
+  }
+  .rect {
+    width: 45%;
+    padding: 3%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 600px) {
+  .wrap {
+    margin-top: 55%;
+  }
+  .rect {
+    width: 65%;
+    padding: 5%;
+  }
+}
